@@ -6,12 +6,41 @@ export const schema = {
   children: [
     {
       type: 'group',
-      direction: 'row',
+      direction: 'column',
       id: 'group1',
       children: [
         {
+          type: 'group',
+          id: 'groupN',
+          direction: 'column',
+          children: [{
+            type: 'track',
+            id: 'trackN',
+            direction: 'row',
+            children: [
+              {
+                type: 'element', id: 'element11'
+              },
+              {
+                type: 'element', id: 'element22'
+              }]
+          }, {
+            type: 'track',
+            id: 'trackN1',
+            direction: 'row',
+            children: [
+              {
+                type: 'element', id: 'element1'
+              },
+              {
+                type: 'element', id: 'element2'
+              }]
+          },]
+        },
+        {
           type: 'track',
           id: 'track1',
+          direction: 'row',
           children: [
             {
               type: 'element', id: 'element1'
@@ -23,6 +52,7 @@ export const schema = {
         {
           type: 'track',
           id: 'track2',
+          direction: 'row',
           children: [
             {
               type: 'element', id: 'video1'
@@ -39,7 +69,7 @@ export const schema = {
       id: 'group2',
       children: [
         {
-          type: 'track', id: 'track3', children: [{
+          type: 'track', id: 'track3', direction: 'row', children: [{
             type: 'element', id: 'audio'
           },]
         },

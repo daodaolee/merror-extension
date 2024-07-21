@@ -7,7 +7,7 @@ const Prop = ({ selectNode }: any) => {
     array.filter(item => item !== "children")
   }
   const propsData = array.filter(item => item !== "children")
-  return <div className="p-4 flex flex-col flex-1  overflow-auto">
+  return <div className={`p-4 flex flex-col flex-1  overflow-auto sm:border-t sm:border-[#ddd]`}>
     <div className="transition-all flex-1">
       <div className="text-[#595959] text-base">Props</div>
       {propsData.length ? propsData.map((item, index) => {

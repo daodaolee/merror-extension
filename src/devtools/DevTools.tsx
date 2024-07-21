@@ -25,7 +25,7 @@ export const DevTools = () => {
         </div>
       </div>
       <div className='flex-1 border-t border-[#ddd] flex justify-center items-center'>
-        <Preview schema={schema} className="flex" highlightId={selectNode.id}/>
+        <Preview schema={schema} highlightId={selectNode.id}/>
       </div>
       {/* <div className="flex-1 p-2 border-b flex overflow-auto">
         <div className="w-1/3 p-2 overflow-auto border-r">
