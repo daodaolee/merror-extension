@@ -24,7 +24,7 @@ export const DevTools = () => {
           <Prop selectNode={selectNode}/>
         </div>
       </div>
-      <div className='flex-1 border-t border-[#ddd]'>
+      <div className='flex-1 border-t border-[#ddd] flex justify-center items-center'>
         <Preview schema={schema} className="flex" highlightId={selectNode.id}/>
       </div>
       {/* <div className="flex-1 p-2 border-b flex overflow-auto">
